@@ -16,7 +16,7 @@ const CurrentWeather = ({ currentWeather }) => {
         <Grid className="weather">
             <Grid className="top">
                 <Grid>
-                    <Typography variant="h6" className="city">{currentWeather.city}</Typography>
+                    <Typography marginTop="10px" variant="h6" className="city">{currentWeather.city}</Typography>
                     <Typography variant="h3" className="temperature">{convertToFarenheight(currentWeather.main.temp)}°F</Typography>
                     <Typography variant="subtitle1" className="weather-description">{currentWeather.weather[0].main}</Typography>
 

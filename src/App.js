@@ -34,8 +34,7 @@ function App() {
     <div className='container'>
       <Search onSearchChange={handleOnSearchChange}/>
       {currentWeather ? <CurrentWeather currentWeather={currentWeather}/> : (null)}
-      <Typography variant='h5' align='center'marginTop="20px">1-week Forecast</Typography>
-      <Divider/>
+      <Typography variant='h5' align='center'marginTop="20px" marginBottom="20px">1-week Forecast</Typography>
       {forecast ? <Forecast forecast={forecast}/> : (null)}
     </div>
   );

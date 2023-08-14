@@ -33,7 +33,7 @@ const Forecast = ({ forecast }) => {
     return (
         <Grid>
             {forecastList.map((day) => (
-                <Grid item className="forecast">
+                <Grid item className="forecast" marginRight="20px">
                     <Typography variant="subtitle1">{getDate(day.dt_txt).toString().split(' ')[0]}, {getTime(day.dt_txt)}</Typography>
                     <Typography variant="h5">{convertToFarenheight(day.main.temp)}</Typography>
                     <Typography variant="subtitle2">{day.weather[0].main}</Typography>
