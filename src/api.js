@@ -3,7 +3,7 @@ export const OPEN_WEATHER_API_KEY = '' // enter your open weather api key here;
 export const getApiOptions = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '' // enter your rapid api key here ,
+		'X-RapidAPI-Key': '', // enter your rapid api key here
 		'X-RapidAPI-Host': 'wft-geo-db.p.rapidapi.com'
 	}
 };
