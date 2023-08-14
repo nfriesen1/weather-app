@@ -1,9 +1,9 @@
 export const GEO_API_URL = 'https://wft-geo-db.p.rapidapi.com/v1/geo/cities';
-export const OPEN_WEATHER_API_KEY = 'ae5236d71121e2157df3084ec5d8d815';
+export const OPEN_WEATHER_API_KEY = '' // enter your open weather api key here;
 export const getApiOptions = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': 'f8e00ee837mshd10ac7a17687effp133ce1jsn477676aa3e70',
+		'X-RapidAPI-Key': '' // enter your rapid api key here ,
 		'X-RapidAPI-Host': 'wft-geo-db.p.rapidapi.com'
 	}
 };
