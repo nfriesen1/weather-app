@@ -13,18 +13,22 @@ I built it while learning React and working with third-party APIs: running reque
 
 ## Tech stack
 
-React 18 (Create React App), Material UI, `react-select-async-paginate`, the OpenWeather API, and the GeoDB Cities API (through RapidAPI).
+React 18, Vite, Material UI, `react-select-async-paginate`, the OpenWeather API, and the GeoDB Cities API (through RapidAPI).
 
 ## Running it locally
 
 1. Get two free API keys:
    - an OpenWeather API key from https://openweathermap.org/api
    - a RapidAPI key with a subscription to GeoDB Cities: https://rapidapi.com/wirefreethought/api/geodb-cities
-2. Put both keys in `src/api.js`.
+2. Copy `.env.example` to `.env` and add both keys. `.env` is git-ignored, so the keys stay out of the repo.
+   ```bash
+   cp .env.example .env
+   ```
 3. Install and start:
    ```bash
    npm install
-   npm start        # http://localhost:3000
+   npm start          # http://localhost:3000
+   npm run build      # production build in dist/
    ```
 
 > The keys are read in the browser, so anyone using a deployed build can see them. That's fine for a learning project. A production version would send these requests through a small server-side proxy.
@@ -33,7 +37,7 @@ React 18 (Create React App), Material UI, `react-select-async-paginate`, the Ope
 
 ```
 src/
-  api.js                       API endpoints and keys
+  api.js                       API endpoints; keys come from .env
   App.js                       fetches weather for the selected city
   components/
     Search/                    city autocomplete (GeoDB)
